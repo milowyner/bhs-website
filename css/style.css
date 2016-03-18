@@ -12,10 +12,38 @@ body {
 	color: #333;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-top: 0;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
+.main-header {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.bhs-banner {
+  width: 100%;
+  max-width: 695px;
+}
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.main-footer {
+  text-align: center;
+}
 
 
 /* ================================= 
