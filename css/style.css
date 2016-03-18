@@ -17,23 +17,34 @@ a {
   color: #212121;
 }
 
-ul {
-  margin-top: 0;
-}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
 
 nav {
   background-color: #000;
+  text-align: center;
+}
+
+nav ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+nav li {
+  list-style: none;
 }
 
 nav a {
   color: #fff;
+  display: block;
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 
-/* ================================= 
-  Base Layout Styles
-==================================== */
+/* ---- Layout Containers ---- */
 
 .main-header {
   width: 100%;
@@ -55,7 +66,6 @@ nav a {
 .main-footer {
   text-align: center;
 }
-
 
 /* ================================= 
   Media Queries
