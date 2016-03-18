@@ -9,15 +9,26 @@
 body {
 	font-family: Tahoma, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
-	color: #333;
+	color: #212121;
 }
 
 a {
   text-decoration: none;
+  color: #212121;
 }
 
 ul {
   margin-top: 0;
+}
+
+nav {
+  background-color: #000;
+}
+
+nav a {
+  color: #fff;
+  font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 /* ================================= 
@@ -27,7 +38,7 @@ ul {
 .main-header {
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   text-align: center;
 }
 
