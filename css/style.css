@@ -24,7 +24,7 @@ a {
 /* ---- Navigation ---- */
 
 nav {
-  background-color: #000;
+  background-color: #111;
   text-align: center;
   margin-top: 14px;
 }
@@ -36,8 +36,10 @@ nav ul {
 
 nav li {
   list-style: none;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+}
+
+nav li ul {
+  background-color: #444;
 }
 
 nav a {
@@ -45,6 +47,12 @@ nav a {
   display: block;
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+nav a:hover {
+  color: #f60;
 }
 
 /* ---- Layout Containers ---- */
