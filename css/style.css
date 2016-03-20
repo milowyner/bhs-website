@@ -23,36 +23,35 @@ a {
 
 /* ---- Navigation ---- */
 
-nav {
+.main-nav {
   background-color: #111;
-  text-align: center;
   margin-top: 14px;
 }
 
-nav ul {
+.main-nav ul {
   margin: 0;
   padding-left: 0;
 }
 
-nav li {
-  list-style: none;
-}
-
-nav li ul {
-  background-color: #444;
-}
-
-nav a {
+.main-nav a {
   color: #fff;
   display: block;
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  border-bottom: 1px solid #333;
 }
 
-nav a:hover {
+.main-nav a:hover {
   color: #f60;
+}
+.main-nav ul ul {
+  background-color: #333;
+}
+
+.main-nav ul ul a {
+  border-bottom: 1px solid #555;
 }
 
 /* ---- Layout Containers ---- */
