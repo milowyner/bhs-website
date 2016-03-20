@@ -12,9 +12,41 @@ body {
 	color: #212121;
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 1.75em;
+  margin-bottom: 0.25em;
+}
+
+h1,
+h2 {
+  color: #f60;
+  font-weight: 400;
+  font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
 a {
+  color: #f60;
   text-decoration: none;
-  color: #212121;
+}
+
+a:hover {
+  color: #ffb380;
+}
+
+.main-content a:after {
+  content: " ▸";
 }
 
 /* ================================= 
@@ -24,8 +56,10 @@ a {
 /* ---- Navigation ---- */
 
 .main-nav {
+  font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
   background-color: #0d0d0d;
-  margin-top: 14px;
+  margin-top: 20px;
 }
 
 .main-nav ul {
@@ -36,8 +70,6 @@ a {
 .main-nav a {
   color: #fff;
   display: block;
-  font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-bottom: 1px solid #333;
@@ -59,6 +91,7 @@ a {
   display: none;
 }
 
+/* ! Temporary until funtionality is in place ! */
 .main-nav ul .show {
   display: block;
 }
@@ -67,14 +100,14 @@ a {
 
 .main-header {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
   text-align: center;
 }
 
 .bhs-banner {
   width: 100%;
   max-width: 695px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .container {
