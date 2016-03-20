@@ -59,6 +59,10 @@ a {
   display: none;
 }
 
+.main-nav ul .show {
+  display: block;
+}
+
 /* ---- Layout Containers ---- */
 
 .main-header {
