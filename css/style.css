@@ -24,7 +24,7 @@ a {
 /* ---- Navigation ---- */
 
 .main-nav {
-  background-color: #111;
+  background-color: #1a1a1a;
   margin-top: 14px;
 }
 
@@ -40,7 +40,7 @@ a {
   text-transform: uppercase;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #000;
 }
 
 .main-nav a:hover {
@@ -51,7 +51,7 @@ a {
 }
 
 .main-nav ul ul a {
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #1a1a1a;
 }
 
 /* ---- Layout Containers ---- */
