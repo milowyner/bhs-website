@@ -49,10 +49,6 @@ a:hover {
   content: " ▸";
 }
 
-.click-expand:hover ul {
-  display: block;
-}
-
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -62,6 +58,7 @@ a:hover {
 .main-nav {
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  text-align: center;
   background-color: #0d0d0d;
   margin-top: 20px;
 }
@@ -82,12 +79,17 @@ a:hover {
 .main-nav a:hover {
   color: #f60;
 }
+
 .main-nav ul ul {
   background-color: #f60;
 }
 
 .main-nav ul ul a {
   border-bottom: 1px solid #ffb380;
+}
+
+.main-nav ul ul a:hover {
+  color: #0d0d0d;
 }
 
 /* ! Temporary until funtionality is in place ! */
@@ -97,6 +99,16 @@ a:hover {
 
 /* ! Temporary until funtionality is in place ! */
 .main-nav ul .show {
+  display: block;
+}
+
+/* ---- Nav links show on hover/tap ---- */
+.about-us:hover ul,
+.academics:hover ul,
+.calendar:hover ul,
+.parents-students:hover ul,
+.bhs-community:hover ul,
+.contact-us:hover ul {
   display: block;
 }
 
