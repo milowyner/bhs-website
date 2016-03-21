@@ -16,7 +16,7 @@ h1,
 h2,
 h3 {
   margin-top: 1.75em;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
 }
 
 h1,
@@ -71,8 +71,8 @@ a:hover {
 .main-nav a {
   color: #fff;
   display: block;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   border-bottom: 1px solid #333;
 }
 
