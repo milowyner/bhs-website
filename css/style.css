@@ -49,6 +49,11 @@ a:hover {
   content: " ▸";
 }
 
+.main-nav > ul > li > a:after {
+  content: "▾";
+  margin-left: 0.4em;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
