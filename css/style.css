@@ -49,6 +49,10 @@ a:hover {
   content: " ▸";
 }
 
+.click-expand:hover ul {
+  display: block;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
