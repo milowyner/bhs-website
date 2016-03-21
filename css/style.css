@@ -82,6 +82,9 @@ a:hover {
 
 .main-nav ul ul {
   background-color: #f60;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
 }
 
 .main-nav ul ul a {
@@ -92,16 +95,6 @@ a:hover {
   color: #0d0d0d;
 }
 
-/* ! Temporary until funtionality is in place ! */
-.main-nav ul ul {
-  display: none;
-}
-
-/* ! Temporary until funtionality is in place ! */
-.main-nav ul .show {
-  display: block;
-}
-
 /* ---- Nav links show on hover/tap ---- */
 .about-us:hover ul,
 .academics:hover ul,
@@ -109,7 +102,8 @@ a:hover {
 .parents-students:hover ul,
 .bhs-community:hover ul,
 .contact-us:hover ul {
-  display: block;
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
 }
 
 /* ---- Layout Containers ---- */
