@@ -91,7 +91,8 @@ a:hover {
 
 .main-nav ul ul {
   background-color: #f60;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .main-nav ul ul a {
@@ -122,7 +123,7 @@ a:hover {
 .parents-students:hover ul,
 .bhs-community:hover ul,
 .contact-us:hover ul {
-  display: block;
+  max-height: 500px;
 }
 
 /* ---- Layout Containers ---- */
