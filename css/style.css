@@ -83,7 +83,7 @@ a:hover {
 .main-nav ul ul {
   background-color: #f60;
   max-height: 0;
-  transition: max-height 0.4s ease-out;
+  transition: max-height 0.3s;
   overflow: hidden;
 }
 
@@ -103,8 +103,7 @@ a:hover {
 .bhs-community:hover ul,
 .contact-us:hover ul {
   max-height: 500px;
-  transition: max-height 0.5s ease-in;
-  transition-delay: 0.3s;
+  transition: max-height 1s;
 }
 
 /* ---- Layout Containers ---- */
