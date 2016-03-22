@@ -87,15 +87,7 @@ a:hover {
   overflow: hidden;
 }
 
-.main-nav ul ul a {
-  border-bottom: 1px solid #ffb380;
-}
-
-.main-nav ul ul a:hover {
-  color: #0d0d0d;
-}
-
-/* ---- Nav links show on hover/tap ---- */
+/* Nav links show on hover/tap */
 .about-us:hover ul,
 .academics:hover ul,
 .calendar:hover ul,
@@ -104,6 +96,14 @@ a:hover {
 .contact-us:hover ul {
   max-height: 500px;
   transition: max-height 1s;
+}
+
+.main-nav ul ul a {
+  border-bottom: 1px solid #ffb380;
+}
+
+.main-nav ul ul a:hover {
+  color: #0d0d0d;
 }
 
 /* ---- Layout Containers ---- */
