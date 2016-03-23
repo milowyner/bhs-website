@@ -100,14 +100,15 @@ a:hover {
 }
 
 /* Nav links show on hover/tap */
-.about-us:hover ul,
+/* Disabled for jQuery solution */
+/*.about-us:hover ul,
 .academics:hover ul,
 .calendar:hover ul,
 .parents-students:hover ul,
 .bhs-community:hover ul,
 .contact-us:hover ul {
   display: block;
-}
+}*/
 
 .main-nav ul ul a {
   border-bottom: 1px solid #ffb380;
