@@ -15,8 +15,8 @@ body {
 h1,
 h2,
 h3 {
-  margin-top: 2.5rem;
-  margin-bottom: 0;
+  margin-top: 3rem;
+  margin-bottom: 0.25rem;
 }
 
 h1,
@@ -52,22 +52,6 @@ a {
 
 a:hover {
   color: #ffa366;
-}
-
-.main-content a:after {
-  content: " ▸";
-}
-
-.secondary-content a:hover {
-  text-decoration: underline;
-}
-
-.resources li {
-  margin-bottom: 0.75em;}
-
-.school-highlights span {
-  display: inline-block;
-  margin-bottom: 1em;
 }
 
 /* ================================= 
@@ -145,6 +129,32 @@ a:hover {
 
 .main-footer {
   text-align: center;
+}
+
+/* ---- Main and Secondary Content ---- */
+
+.main-content a:after {
+  content: " ▸";
+}
+
+.secondary-content h3 {
+  border-bottom: 2px solid #cc5200;
+}
+
+.secondary-content a {
+  /*font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;*/
+}
+
+.secondary-content a:hover {
+  text-decoration: underline;
+}
+
+.resources li {
+  margin-bottom: 0.75em;}
+
+.school-highlights span {
+  display: inline-block;
+  margin-bottom: 1em;
 }
 
 /* ================================= 
