@@ -42,6 +42,13 @@ img {
   width: 100%;
 }
 
+.bhs-banner {
+  width: 100%;
+  max-width: 695px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 a {
   color: #f60;
   text-decoration: none;
@@ -49,6 +56,11 @@ a {
 
 a:hover {
   color: #ffa366;
+}
+
+.main-content a:after,
+#resources a:after {
+  content: " ▸";
 }
 
 /* ================================= 
@@ -65,11 +77,6 @@ a:hover {
   margin-top: 20px;
 }
 
-.main-nav ul {
-  margin: 0;
-  padding-left: 0;
-}
-
 .main-nav a {
   color: #fff;
   display: block;
@@ -80,6 +87,11 @@ a:hover {
 
 .main-nav a:hover {
   color: #f60;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding-left: 0;
 }
 
 .main-nav ul ul {
@@ -112,27 +124,20 @@ a:hover {
   text-align: center;
 }
 
-.bhs-banner {
-  width: 100%;
-  max-width: 695px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .container {
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.secondary-content {
+  margin-top: 4rem;
 }
 
 .main-footer {
   text-align: center;
 }
 
-/* ---- Main and Secondary Content ---- */
-
-.main-content a:after {
-  content: " ▸";
-}
+/* ---- Secondary Content ---- */
 
 .secondary-content ul {
   margin: 0;
@@ -152,20 +157,24 @@ a:hover {
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
 }
 
-.secondary-content a:hover {
-  text-decoration: underline;
-}
-
-.resources li {
+#resources li {
   margin-bottom: 0.75em;
 }
 
-.school-highlights li {
+#resources a {
+  color: inherit;
+}
+
+#resources a:hover {
+  color: #f60;
+}
+
+#school-highlights li {
   font-weight: 600;
   color: #333;
 }
 
-.school-highlights span {
+#school-highlights span {
   display: inline-block;
   margin-bottom: 1em;
 }
