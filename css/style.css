@@ -42,13 +42,6 @@ img {
   width: 100%;
 }
 
-.bhs-banner {
-  width: 100%;
-  max-width: 695px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 a {
   color: #f60;
   text-decoration: none;
@@ -75,6 +68,7 @@ a:hover {
   text-align: center;
   background-color: #0d0d0d;
   margin-top: 20px;
+  clear: both;
 }
 
 .main-nav a {
@@ -121,8 +115,50 @@ a:hover {
 
 .main-header {
   width: 100%;
-  text-align: center;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
+
+/*.main-header a {
+  display: block;
+  width: 100%;
+}*/
+
+.bhs-banner {
+  width: 78%;
+}
+
+.search-icon {
+  background-color: #000;
+  width: 17%;
+  align-self: center;
+  padding: 6%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+/*#search-icon {
+  width: 40px;
+  height: 40px;
+}*/
+
+/*.bhs-banner {
+  width: 80%;
+  max-width: 695px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.search-icon {
+  background-color: #000;
+  width: 12%;
+  margin: 20px 1rem 20px auto;
+  padding: 25px;
+  float: right;
+  text-align: center;
+}*/
 
 .container {
   padding-left: 1em;
