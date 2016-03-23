@@ -13,17 +13,12 @@ body {
 }
 
 h1,
-h2,
-h3 {
-  margin-top: 3rem;
-  margin-bottom: 0.25rem;
-}
-
-h1,
 h2 {
   color: #f60;
   font-weight: 400;
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 0.25rem;
 }
 
 h3 {
@@ -33,6 +28,8 @@ h3 {
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
   background-color: #f60;
   padding: 10px 10px;
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 p {
@@ -137,12 +134,22 @@ a:hover {
   content: " ▸";
 }
 
+.secondary-content ul {
+  margin: 0;
+  padding: 1em 1em 0.5em 1.5em;
+  list-style: none;
+  border-left: 1px solid #444;
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+
 .secondary-content h3 {
   border-bottom: 2px solid #cc5200;
+  padding: 10px 0 10px 1.5em;
 }
 
 .secondary-content a {
-  /*font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;*/
+  font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
 }
 
 .secondary-content a:hover {
@@ -150,7 +157,13 @@ a:hover {
 }
 
 .resources li {
-  margin-bottom: 0.75em;}
+  margin-bottom: 0.75em;
+}
+
+.school-highlights li {
+  font-weight: 600;
+  color: #333;
+}
 
 .school-highlights span {
   display: inline-block;
