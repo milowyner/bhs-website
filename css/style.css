@@ -99,6 +99,10 @@ a:hover {
   color: #f60;
 }
 
+.main-nav .selected {
+  color: #f60;
+}
+
 .main-nav ul {
   margin: 0;
   padding-left: 0;
