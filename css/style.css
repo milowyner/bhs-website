@@ -71,6 +71,12 @@ a:hover {
   Base Layout Styles
 ==================================== */
 
+/* ---- Search Bar ---- */
+.search-form {
+  display: none;
+}
+
+
 /* ---- Navigation ---- */
 
 .main-nav {
@@ -84,8 +90,8 @@ a:hover {
 .main-nav a {
   color: #fff;
   display: block;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
   border-bottom: 1px solid #333;
 }
 
