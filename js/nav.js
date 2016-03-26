@@ -8,10 +8,16 @@ $('.nav-link > a').click(function () {
 	$('.nav-link > ul').slideUp(300);
 	// Change all nav link colors to white (should also just be last)
 	$('.nav-link > a').css('color', '#fff');
+	if ($('.nav-link > a').hasClass('selected')) { // Keeps .selected nav links colored orange
+		$('.selected').css('color', '#f60');
+	}
 	// If nested nav is open when clicked
 	if (openNav == this.innerText) {
 		$(this).next().slideUp(300); // Hide nested nav
 		$(this).css('color', '#fff'); // Change nav link color to white
+		if ($('.nav-link > a').hasClass('selected')) { // Keeps .selected nav links colored orange
+			$('.selected').css('color', '#f60');
+		}
 		openNav = null;
 	// If the nested nav is closed when clicked
 	} else {
