@@ -49,6 +49,10 @@ img {
   margin-bottom: 20px;
 }
 
+address {
+  font-style: normal;
+}
+
 a {
   color: #f60;
   text-decoration: none;
@@ -150,6 +154,20 @@ a:hover {
 
 .main-footer {
   text-align: center;
+  padding-top: 3em;
+  padding-bottom: 4em;
+}
+
+.copyright {
+  font-weight: bold;
+  display: block;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.bsd-logo {
+  width: 177px;
+  margin: auto;
 }
 
 /* ---- Secondary Content ---- */
