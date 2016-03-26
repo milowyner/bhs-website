@@ -10,6 +10,7 @@ $('.nav-link > a').click(function () {
 	if (openNav == this.innerText) {
 		$(this).next().slideUp(300); // Hide nested nav
 		openNav = null;
+		$(this).setAttr(color, '#fff');
 	// If the nested nav is closed when clicked
 	} else {
 		$(this).next().slideDown(300); // Show nested nav
