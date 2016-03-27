@@ -144,11 +144,18 @@ a:hover {
 .main-nav ul {
   margin: 0;
   padding-left: 0;
+  list-style: none;
 }
+
+/* ---- Nav links ---- */
 
 .nav-link ul {
   background-color: #f60;
   display: none;
+}
+
+.nav-link:hover ul {
+  display: block;
 }
 
 .nav-link ul a {
