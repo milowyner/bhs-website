@@ -75,67 +75,6 @@ a:hover {
   Base Layout Styles
 ==================================== */
 
-/* ---- Search Bar ---- */
-
-.search-form {
-  display: none;
-}
-
-/* ---- Navigation ---- */
-
-.main-nav {
-  font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #0d0d0d;
-  margin-top: 20px;
-}
-
-.main-nav a {
-  color: #fff;
-  display: block;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  border-bottom: 1px solid #333;
-}
-
-.main-nav a:hover {
-  color: #f60;
-}
-
-.main-nav .selected {
-  color: #f60;
-}
-
-.main-nav ul {
-  margin: 0;
-  padding-left: 0;
-}
-
-.main-nav ul ul {
-  background-color: #f60;
-  display: none;
-}
-
-/* Nav links show on hover/tap */
-/* Disabled for jQuery solution */
-/*.about-us:hover ul,
-.academics:hover ul,
-.calendar:hover ul,
-.parents-students:hover ul,
-.bhs-community:hover ul,
-.contact-us:hover ul {
-  display: block;
-}*/
-
-.main-nav ul ul a {
-  border-bottom: 1px solid #ffb380;
-}
-
-.main-nav ul ul a:hover {
-  color: #0d0d0d;
-}
-
 /* ---- Layout Containers ---- */
 
 .main-header {
@@ -168,6 +107,56 @@ a:hover {
 .bsd-logo {
   width: 177px;
   margin: auto;
+}
+
+/* ---- Search Bar ---- */
+
+.search-form {
+  display: none;
+}
+
+/* ---- Navigation ---- */
+
+.main-nav {
+  font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #0d0d0d;
+}
+
+.main-nav a {
+  color: #fff;
+  display: block;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  border-bottom: 1px solid #333;
+}
+
+.main-nav a:hover {
+  color: #f60;
+}
+
+.main-nav .selected {
+  color: #f60;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.nav-link ul {
+  background-color: #f60;
+  display: none;
+}
+
+.nav-link ul a {
+  border-bottom: 1px solid #ffb380;
+}
+
+.nav-link ul a:hover {
+  color: #0d0d0d;
 }
 
 /* ---- Secondary Content ---- */
@@ -217,6 +206,21 @@ a:hover {
 ==================================== */
 
 @media (min-width: 769px) {
+
+  .main-nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-link {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .nav-link ul {
+    position: absolute;
+  }
 
 	/* ---- Float clearfix ---- */
 
