@@ -137,6 +137,10 @@ a:hover {
   color: #f60;
 }
 
+.main-nav > a {
+  pointer-events: none;
+}
+
 .main-nav ul {
   margin: 0;
   padding-left: 0;
