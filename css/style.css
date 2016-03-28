@@ -133,7 +133,7 @@ a:hover {
   border-bottom: 1px solid #333;
 }
 
-.main-nav a:hover {
+.no-javascript .main-nav a:hover {
   color: #f60;
 }
 
@@ -154,9 +154,9 @@ a:hover {
   display: none;
 }
 
-/*.nav-link:hover ul {
+.no-javascript .nav-link:hover ul {
   display: block;
-}*/
+}
 
 .nav-link ul a {
   border-bottom: 1px solid #ffb380;
