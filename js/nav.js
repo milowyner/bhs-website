@@ -29,13 +29,13 @@ function clickToggle() {
 	console.log('click');
 	$(this).next().slideToggle(400);
 	//Toggle color between the active and inactive colors
-	if ($(this).css('color') == activeColor) {
-		$(this).css('color', inactiveColor);
-		console.log('change to inactive');
-	} else {
-		$(this).css('color', activeColor);
-		console.log('change to active');
-	}
+	// if ($(this).css('color') == activeColor) {
+	// 	$(this).css('color', inactiveColor);
+	// 	console.log('change to inactive');
+	// } else {
+	// 	$(this).css('color', activeColor);
+	// 	console.log('change to active');
+	// }
 	return false;
 }
 
