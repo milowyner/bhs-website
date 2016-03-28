@@ -154,9 +154,9 @@ a:hover {
   display: none;
 }
 
-.nav-link:hover ul {
+/*.nav-link:hover ul {
   display: block;
-}
+}*/
 
 .nav-link ul a {
   border-bottom: 1px solid #ffb380;
