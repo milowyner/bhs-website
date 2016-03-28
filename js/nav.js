@@ -29,7 +29,7 @@ function clickToggle() {
 	console.log('click');
 	$(this).next().slideToggle(400);
 	//Toggle color between the active and inactive colors
-	if ($(this).next().css('display') == 'none') {
+	if ($(this).next().css('display') == 'block') {
 		$(this).css('color', activeColor);
 		console.log('change to active');
 	} else {
