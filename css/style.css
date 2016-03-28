@@ -133,11 +133,7 @@ a:hover {
   border-bottom: 1px solid #333;
 }
 
-.no-javascript .main-nav a:hover {
-  color: #f60;
-}
-
-.main-nav .selected {
+.main-nav a:hover {
   color: #f60;
 }
 
