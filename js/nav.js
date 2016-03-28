@@ -1,40 +1,24 @@
 // Nav.js
 // Shows nested navs smoothly when main nav links are clicked or hovered over
 
-var activeColor;
-var inactiveColor = $('.nav-link a').css('color'); //Assigns inactive color to nav a color
 var timeoutId = 0;
-var thisElement;
+var thisNav;
 
 function showNav() {
-	thisElement.children('ul').css('z-index', 100).slideDown(300);
-}
-
-function changeColor() {
-	//Assign active color to the nav a hover color
-	if( !activeColor ) {
-        activeColor = thisElement.children('a').css('color');
-    }
-    thisElement.children('a').css('color', activeColor); //Set color to active color
-    console.log('change to active');
+	thisNav.css('z-index', 100).slideDown(300);
 }
 
 function hideNav() {
-	thisElement.children('ul').slideUp(200).css('z-index', 50);
-	thisElement.children('a').css('color', inactiveColor); //Set color to inactive color
-	console.log('change to inactive');
+	thisNav.css('z-index', 50).slideUp(200);
 }
 
 function clickToggle() {
 	console.log('click');
 	$(this).next().slideToggle(400);
-	//Toggle color between the active and inactive colors
-	if ($(this).next().css('display') == 'block') {
-		$(this).css('color', activeColor);
-		console.log('change to active');
+	if ($(this).css('color') == 'rgb(255, 102, 0)') {
+		$(this).css('color', 'rgb(255, 255, 255)');
 	} else {
-		$(this).css('color', inactiveColor);
-		console.log('change to inactive');
+		$(this).css('color', 'rgb(255, 102, 0)');
 	}
 	return false;
 }
@@ -46,8 +30,7 @@ $('body').removeClass('no-javascript');
 $('.nav-link').on({
 	mouseenter: function() {
 		console.log('mouseenter');
-		thisElement = $(this);
-		changeColor();
+		thisNav = $(this).children('ul');
 	    timeoutId = setTimeout(showNav, 200);
 	}, 
 	mouseleave: function() {
