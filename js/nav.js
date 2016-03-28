@@ -26,6 +26,7 @@ function hideNav() {
 }
 
 function clickToggle() {
+	console.log('click');
 	$(this).next().slideToggle(400);
 	//Toggle color between the active and inactive colors
 	if ($(this).css('color') == activeColor) {
@@ -35,7 +36,6 @@ function clickToggle() {
 		$(this).css('color', activeColor);
 		console.log('change to active');
 	}
-	console.log('click');
 	return false;
 }
 
@@ -45,15 +45,15 @@ $('body').removeClass('no-javascript');
 // Show nested nav on hover, and hide nested nav on mouse leave
 $('.nav-link').on({
 	mouseenter: function() {
+		console.log('mouseenter');
 		thisElement = $(this);
 		changeColor();
 	    timeoutId = setTimeout(showNav, 200);
-	    console.log('mouseenter');
 	}, 
 	mouseleave: function() {
+		console.log('mouseleave');
 		clearTimeout(timeoutId);
 		hideNav();
-		console.log('mouseleave');
 	}
 });
 
