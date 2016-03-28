@@ -137,17 +137,17 @@ a:hover {
   color: #f60;
 }
 
-.main-nav > a {
-  pointer-events: none;
-}
-
 .main-nav ul {
   margin: 0;
   padding-left: 0;
   list-style: none;
 }
 
-/* ---- Nav links ---- */
+.selected {
+  color: #f60;
+}
+
+/* ---- Nested Navs (ul's) ---- */
 
 .nav-link ul {
   background-color: #f60;
