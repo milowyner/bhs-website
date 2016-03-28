@@ -26,11 +26,11 @@ function hideNav() {
 function clickToggle() {
 	$(this).next().slideToggle(400);
 	//Toggle color between the active and inactive colors
-	if ($(this).css('color') == activeColor) {
-		$(this).css('color', inactiveColor);
-	} else {
-		$(this).css('color', activeColor);
-	}
+	// if ($(this).css('color') == activeColor) {
+	// 	$(this).css('color', inactiveColor);
+	// } else {
+	// 	$(this).css('color', activeColor);
+	// }
 	return false;
 }
 
