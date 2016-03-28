@@ -1,27 +1,42 @@
 // Nav.js
-// Shows nested navs smoothly when main nav links are clicked
+// Shows nested navs smoothly when main nav links are clicked or hovered over
 
-var openNav;
+var activeColor;
+var inactiveColor = $('.nav-link a').css('color'); //Assigns inactive color to nav a color
 
-// Disable show on hover from css
-$('body').removeClass('no-javascript');
+function showNav() {
+	$(this).children('ul').slideDown(300);
+	//Assign active color to the nav a hover color
+	if( !activeColor ) {
+        activeColor = $(this).children('a').css('color');
+    }
+    $(this).children('a').css('color', activeColor); //Set color to active color
+}
 
-// When user clicks nav link
-$('.nav-link > a').click(function() {
-	// Hide all open nested navs (which should just be the last opened nav)
-	$('.nav-link ul').slideUp(300);
-	// Change all nav link colors to white (should also just be last)
-	$('.nav-link > a').css('color', '#fff');
-	// If nested nav is open when clicked
-	if (openNav == this) {
-		$(this).next().slideUp(300); // Hide nested nav
-		$(this).css('color', '#fff'); // Change nav link color to white
-		openNav = null;
-	// If the nested nav is closed when clicked
+function hideNav() {
+	$(this).children('ul').slideUp(300);
+	$(this).children('a').css('color', inactiveColor); //Set color to inactive color
+}
+
+function clickToggle() {
+	$(this).next().slideToggle(300);
+	//Toggle color between the active and inactive colors
+	if ($(this).css('color') == activeColor) {
+		$(this).css('color', inactiveColor);
 	} else {
-		$(this).next().slideDown(300); // Show nested nav
-		$(this).css('color', '#f60'); // Change nav link color to orange
-		openNav = this;
+		$(this).css('color', activeColor);
 	}
 	return false;
+}
+
+// Disable default show on hover from css
+$('body').removeClass('no-javascript');
+
+// Show nested nav on hover, and hide nested nav on mouse leave
+$('.nav-link').on({
+	mouseenter: showNav, 
+	mouseleave: hideNav
 });
+
+// Alternatively toggles nested nav on click (this is for mobile)
+$('.nav-link > a').on('click', clickToggle);
