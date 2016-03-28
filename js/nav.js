@@ -16,11 +16,13 @@ function changeColor() {
         activeColor = thisElement.children('a').css('color');
     }
     thisElement.children('a').css('color', activeColor); //Set color to active color
+    console.log('change to active');
 }
 
 function hideNav() {
 	thisElement.children('ul').slideUp(200).css('z-index', 50);
 	thisElement.children('a').css('color', inactiveColor); //Set color to inactive color
+	console.log('change to inactive');
 }
 
 function clickToggle() {
@@ -28,8 +30,10 @@ function clickToggle() {
 	//Toggle color between the active and inactive colors
 	if ($(this).css('color') == activeColor) {
 		$(this).css('color', inactiveColor);
+		console.log('change to inactive');
 	} else {
 		$(this).css('color', activeColor);
+		console.log('change to active');
 	}
 	console.log('click');
 	return false;
