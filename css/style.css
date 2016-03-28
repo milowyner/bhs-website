@@ -127,6 +127,7 @@ a:hover {
 
 .main-nav a {
   color: #fff;
+  font-size: 0.9em;
   display: block;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
@@ -217,16 +218,22 @@ a:hover {
   .main-nav > ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
 
-  .nav-link {
-    padding-left: 1em;
-    padding-right: 1em;
+  .main-nav a {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+  }
+
+  .nav-link ul a {
+    font-size: 0.8em;
   }
 
   .nav-link ul {
     position: absolute;
+    text-align: left;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1);
   }
 
 	/* ---- Float clearfix ---- */
@@ -241,6 +248,14 @@ a:hover {
 
 @media (min-width: 1025px) {
   
-  
+
 
 }
+
+
+
+
+
+
+
+
