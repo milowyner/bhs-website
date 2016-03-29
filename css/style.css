@@ -87,7 +87,8 @@ a:hover {
 }
 
 .container {
-  
+  max-width: 1280px;
+  margin: auto;
 }
 
 .main-content,
@@ -130,10 +131,8 @@ a:hover {
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
+  margin: auto;
   margin-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1000px;
   background-color: #0d0d0d;
 }
 
@@ -234,6 +233,11 @@ a:hover {
 ==================================== */
 
 @media (min-width: 769px) {
+
+  .main-nav {
+    width: 90%;
+    max-width: 1000px;
+  }
 
   .main-nav > ul {
     display: flex;
