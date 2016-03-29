@@ -15,11 +15,6 @@ function hideNav() {
 function clickToggle() {
 	console.log('click');
 	$(this).next().slideToggle(400);
-	if ($(this).css('color') == 'rgb(255, 102, 0)') {
-		$(this).css('color', 'rgb(255, 255, 255)');
-	} else {
-		$(this).css('color', 'rgb(255, 102, 0)');
-	}
 	return false;
 }
 
