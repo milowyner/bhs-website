@@ -82,7 +82,16 @@ a:hover {
   text-align: center;
 }
 
+.nav-wrapper {
+  background-color: #0d0d0d;
+}
+
 .container {
+  
+}
+
+.main-content,
+.secondary-content {
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -122,7 +131,14 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
   background-color: #0d0d0d;
+}
+
+.main-nav li {
+  border-bottom: 1px solid #333;
 }
 
 .main-nav a {
@@ -131,7 +147,6 @@ a:hover {
   display: block;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
-  border-bottom: 1px solid #333;
 }
 
 .main-nav a:hover {
@@ -159,12 +174,17 @@ a:hover {
   display: block;
 }
 
-.nav-link ul a {
+.nav-link ul li {
   border-bottom: 1px solid #ffb380;
+}
+
+.nav-link ul li:last-child {
+  border-bottom: none;
 }
 
 .nav-link ul a:hover {
   color: #0d0d0d;
+  font-weight: 600;
 }
 
 /* ---- Secondary Content ---- */
@@ -219,6 +239,10 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .main-nav > ul > li {
+    border-bottom: none;
   }
 
   .main-nav a {
