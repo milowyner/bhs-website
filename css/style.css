@@ -193,9 +193,9 @@ a:hover {
   margin: 0;
   padding: 1em 1em 0.5em 1.5em;
   list-style: none;
-  border-left: 1px solid #444;
+  /*border-left: 1px solid #444;
   border-right: 1px solid #444;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #444;*/
 }
 
 .secondary-content h3 {
@@ -238,13 +238,15 @@ a:hover {
   /* ---- Base Styles ---- */
 
   h1,
-  h2 {
+  h2,
+  h3 {
     margin-top: 0.5rem;
   }
 
   /* ---- Layout ---- */
 
-  .group {
+  .group,
+  .secondary-content div {
     margin: 2em 0;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
   }
