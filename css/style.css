@@ -62,7 +62,7 @@ a:hover {
   color: #ffa366;
 }
 
-.main-content a:after,
+/*.main-content a:after,
 #resources a:after {
   content: " ▸";
 }
@@ -70,7 +70,7 @@ a:hover {
 .arrow-after:after {
   content: " ▸";
 }
-
+*/
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -199,15 +199,18 @@ a:hover {
 }
 
 .secondary-content h3 {
+  text-transform: uppercase;
   border-bottom: 2px solid #cc5200;
   padding: 10px 0 10px 1.5em;
 }
 
 .secondary-content a {
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
 }
 
-#resources li {
+#resources li,
+#upcoming-events li {
   margin-bottom: 0.75em;
 }
 
@@ -229,6 +232,11 @@ a:hover {
   margin-bottom: 1em;
 }
 
+#upcoming-events span {
+  font-weight: 600;
+  color: #262626;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -238,9 +246,12 @@ a:hover {
   /* ---- Base Styles ---- */
 
   h1,
-  h2,
-  h3 {
+  h2 {
     margin-top: 0.5rem;
+  }
+
+  h3 {
+    margin-top: 0;
   }
 
   /* ---- Layout ---- */
@@ -252,13 +263,13 @@ a:hover {
   }
 
   .group .text {
-    width: 40%;
+    width: 45%;
     padding-left: 1em;
     padding-right: 1em;
   }
 
   .group img {
-    width: 60%;
+    width: 55%;
   }
 
   .group:nth-child(even) img,
@@ -271,10 +282,18 @@ a:hover {
     float: right;
   }
 
-  .group::after { /* Clearfix */
+  .group::after,
+  .secondary-content::after { /* Clearfix */
   content: " ";
   display: table;
   clear: both;
+  }
+
+  .secondary-content div {
+    float: left;
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
   }
 
   .main-footer {
@@ -355,6 +374,13 @@ a:hover {
     float: right;
     width: 30%;
     margin-top: 0;
+  }
+
+  .secondary-content div {
+    float: none;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
 }
