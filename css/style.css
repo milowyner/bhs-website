@@ -235,20 +235,48 @@ a:hover {
 
 @media (min-width: 769px) {
 
+  /* ---- Base Styles ---- */
+
+  h1,
+  h2 {
+    margin-top: 0.5rem;
+  }
+
   /* ---- Layout ---- */
+
+  .group {
+    margin: 2em 0;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .group .text {
+    width: 40%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 
   .group img {
     width: 60%;
-    display: inline-block;
+  }
+
+  .group:nth-child(even) img,
+  .group:nth-child(odd) .text {
+    float: left;
   }
 
   .group:nth-child(odd) img,
-  .group:nth-child(odd) .text {
+  .group:nth-child(even) .text {
     float: right;
   }
 
-  .group:nth-child(even) img {
-    float: left;
+  .group::after { /* Clearfix */
+  content: " ";
+  display: table;
+  clear: both;
+  }
+
+  .main-footer {
+    clear: both;
   }
 
   /* ---- Nav ---- */
@@ -256,6 +284,7 @@ a:hover {
   .main-nav {
     width: 90%;
     max-width: 900px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
   }
 
   .main-nav > ul {
@@ -280,7 +309,7 @@ a:hover {
   .nav-link ul {
     position: absolute;
     text-align: left;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.5);
   }
 
 	/* ---- Float clearfix ---- */
@@ -295,7 +324,32 @@ a:hover {
 
 @media (min-width: 1025px) {
   
+  /* ---- Base Styles ---- */
 
+  /*h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }*/
+
+  /* ---- Layout Styles ---- */
+
+  .main-content {
+    float: left;
+    width: 70%;
+  }
+
+  .secondary-content {
+    float: right;
+    width: 30%;
+    margin-top: 0;
+  }
 
 }
 
