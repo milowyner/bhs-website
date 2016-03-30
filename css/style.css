@@ -86,7 +86,8 @@ a:hover {
   background-color: #0d0d0d;
 }
 
-.container {
+.container,
+.main-nav {
   max-width: 1280px;
   margin: auto;
 }
@@ -233,6 +234,24 @@ a:hover {
 ==================================== */
 
 @media (min-width: 769px) {
+
+  /* ---- Layout ---- */
+
+  .group img {
+    width: 60%;
+    display: inline-block;
+  }
+
+  .group:nth-child(odd) img,
+  .group:nth-child(odd) .text {
+    float: right;
+  }
+
+  .group:nth-child(even) img {
+    float: left;
+  }
+
+  /* ---- Nav ---- */
 
   .main-nav {
     width: 90%;
