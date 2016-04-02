@@ -190,6 +190,10 @@ a:hover {
 
 /* ---- Secondary Content ---- */
 
+.secondary-content {
+  font-size: 0.9em;
+}
+
 .secondary-content ul {
   margin: 0;
   padding: 1em 1em 0.5em 1.5em;
@@ -207,7 +211,6 @@ a:hover {
 
 .secondary-content a {
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
-  font-size: 0.9em;
 }
 
 #resources li,
