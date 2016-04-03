@@ -78,6 +78,14 @@ a:hover {
 
 /* ---- Layout Containers ---- */
 
+.main-header,
+.main-nav,
+.main-content,
+.secondary-content {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .main-header {
   width: 100%;
   text-align: center;
@@ -85,12 +93,6 @@ a:hover {
 
 .nav-wrapper {
   background-color: #0d0d0d;
-}
-
-.container,
-.main-nav {
-  max-width: 1280px;
-  margin: auto;
 }
 
 .main-content,
@@ -266,6 +268,13 @@ a:hover {
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
   }
 
+  .group::after,
+  .secondary-content::after { /* Clearfix */
+  content: " ";
+  display: table;
+  clear: both;
+  }
+
   .group .text {
     width: 45%;
     padding-left: 1em;
@@ -284,13 +293,6 @@ a:hover {
   .group:nth-child(odd) img,
   .group:nth-child(even) .text {
     float: right;
-  }
-
-  .group::after,
-  .secondary-content::after { /* Clearfix */
-  content: " ";
-  display: table;
-  clear: both;
   }
 
   .secondary-content div {
