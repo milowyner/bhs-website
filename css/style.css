@@ -79,7 +79,7 @@ a:hover {
 /* ---- Layout Containers ---- */
 
 .main-header,
-.main-nav,
+.main-nav ul,
 .main-content,
 .secondary-content {
   max-width: 1280px;
@@ -89,10 +89,6 @@ a:hover {
 .main-header {
   width: 100%;
   text-align: center;
-}
-
-.nav-wrapper {
-  background-color: #0d0d0d;
 }
 
 .main-content,
@@ -135,9 +131,14 @@ a:hover {
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  margin: auto;
+  width: 100%;
   margin-top: 20px;
   background-color: #0d0d0d;
+}
+
+.main-nav ul {
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav li {
@@ -154,12 +155,6 @@ a:hover {
 
 .main-nav a:hover {
   color: #f60;
-}
-
-.main-nav ul {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
 }
 
 .selected {
@@ -308,13 +303,11 @@ a:hover {
 
   /* ---- Nav ---- */
 
-  .main-nav {
+  .main-nav > ul {
+    margin: auto;
     width: 90%;
     max-width: 900px;
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
-  }
-
-  .main-nav > ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
