@@ -43,7 +43,7 @@ img {
 }
 
 .bhs-banner {
-  width: 100%;
+  display: block;
   max-width: 695px;
   margin-top: 20px;
   margin-bottom: 20px;
