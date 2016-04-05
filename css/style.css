@@ -42,13 +42,6 @@ img {
   width: 100%;
 }
 
-.bhs-banner {
-  display: block;
-  max-width: 695px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 address {
   font-style: normal;
 }
@@ -89,6 +82,14 @@ a:hover {
 .main-header {
   width: 100%;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.bhs-banner {
+  display: block;
+  max-width: 695px;
 }
 
 .main-content,
@@ -121,6 +122,22 @@ a:hover {
 
 /* ---- Search Bar ---- */
 
+.search-container {
+  width: 145px;
+  background-color: #000;
+}
+
+.icon-search {
+  /*width: 100%;
+  display: block;*/
+}
+
+.icon-search:before {
+  content: "\e900";
+  color: #fff;
+  vertical-align: middle;
+}
+
 .search-form {
   display: none;
 }
@@ -132,7 +149,6 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  margin-top: 20px;
   background-color: #0d0d0d;
 }
 
