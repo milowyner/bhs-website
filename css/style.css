@@ -124,7 +124,7 @@ a:hover {
 
 .search-container {
   width: 145px;
-  /*background-color: #0d0d0d;*/
+  background-color: #0d0d0d;
   /*border-top: 1px solid #888;
   border-bottom: 1px solid #888;*/
   display: flex;
@@ -135,7 +135,7 @@ a:hover {
 .icon-search {
   display: block;
   padding: 0;
-  background-color: #0d0d0d;
+  background-color: #333;
   border-radius: 4px;
   padding: 10px;
 }
