@@ -183,7 +183,8 @@ a:hover {
   margin-right: auto;
   background-color: #333;
   border: none;
-  padding: 6px;
+  padding: 9px;
+  border-radius: 4px;
   color: #aaa;
 }
 
@@ -483,18 +484,21 @@ a:hover {
   /* ---- Search ---- */
 
   #search-form {
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .sb-wrapper {
     display: block;
     position: static;
-    width: 80%;
+    width: 70%;
+    max-width: 300px;
     background: none;
+    margin-right: 10px;
   }
 
   #search-bar {
     width: 100%;
+    box-sizing: border-box;
   }
 
 }
