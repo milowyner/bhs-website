@@ -106,10 +106,7 @@ a:hover {
 
 /* ---- Layout Containers ---- */
 
-.main-header,
-.main-nav ul,
-.main-content,
-.secondary-content {
+.wrapper {
   max-width: 1280px;
   margin: auto;
 }
@@ -159,7 +156,7 @@ a:hover {
 
 /* ---- Search Bar ---- */
 
-.search-form {
+#search-form {
   width: 140px;
   background-color: #0d0d0d;
   /*border-top: 1px solid #888;
@@ -173,7 +170,6 @@ a:hover {
   display: none;
   width: 100%;
   /*height: 40px;*/
-  background-color: #f60;
   position: absolute;
   bottom: -40px;
   right: 0;
@@ -185,6 +181,10 @@ a:hover {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #333;
+  border: none;
+  padding: 6px;
+  color: #aaa;
 }
 
 #search-button {
@@ -193,6 +193,10 @@ a:hover {
   background-color: #333;
   border-radius: 4px;
   padding: 10px;
+}
+
+#search-button:hover {
+  background-color: #f60;
 }
 
 .icon-search {
@@ -341,6 +345,11 @@ a:hover {
 
   /* ---- Layout ---- */
 
+  #search-form {
+    width: auto;
+    flex-grow: 1;
+  }
+
   .group,
   .secondary-content div {
     margin: 2em 0;
@@ -448,6 +457,11 @@ a:hover {
 
   /* ---- Layout Styles ---- */
 
+  .main-header {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
   .main-content {
     float: left;
     width: 70%;
@@ -464,6 +478,23 @@ a:hover {
     width: auto;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  /* ---- Search ---- */
+
+  #search-form {
+    justify-content: space-around;
+  }
+
+  .sb-wrapper {
+    display: block;
+    position: static;
+    width: 80%;
+    background: none;
+  }
+
+  #search-bar {
+    width: 100%;
   }
 
 }
