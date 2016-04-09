@@ -13,7 +13,6 @@ function hideNav() {
 }
 
 function clickToggle() {
-	console.log('click');
 	$(this).next().slideToggle(400);
 	return false;
 }
@@ -24,12 +23,10 @@ $('body').removeClass('no-javascript');
 // Show nested nav on hover, and hide nested nav on mouse leave
 $('.nav-link').on({
 	mouseenter: function() {
-		console.log('mouseenter');
 		thisNav = $(this).children('ul');
 	    timeoutId = setTimeout(showNav, 200);
 	}, 
 	mouseleave: function() {
-		console.log('mouseleave');
 		clearTimeout(timeoutId);
 		hideNav();
 	}
