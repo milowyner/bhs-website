@@ -188,6 +188,11 @@ a:hover {
   color: #aaa;
 }
 
+#search-bar:hover {
+  /*box-shadow: 0 0 1px 2px #333 inset;*/
+  background-color: #262626;
+}
+
 #search-button {
   display: block;
   border: none;
@@ -278,6 +283,10 @@ a:hover {
 
 .secondary-content {
   font-size: 0.9em;
+}
+
+.secondary-content div {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .secondary-content ul {
@@ -499,6 +508,7 @@ a:hover {
   #search-bar {
     width: 100%;
     box-sizing: border-box;
+    margin: 0;
   }
 
 }
