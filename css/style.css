@@ -360,7 +360,7 @@ a:hover {
   /* ---- Layout ---- */
 
   #search-form {
-    width: auto;
+    width: 20%;
     flex-grow: 1;
   }
 
@@ -409,6 +409,10 @@ a:hover {
   }
 
   /* ---- Nav ---- */
+
+  .main-nav {
+    max-width: 1248px;
+  }
 
   .main-nav > ul {
     margin: auto;
