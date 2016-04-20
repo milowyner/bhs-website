@@ -133,7 +133,6 @@ a:hover {
 .secondary-content {
   padding-left: 1em;
   padding-right: 1em;
-  margin-top: 4rem;
 }
 
 .group,
@@ -303,9 +302,6 @@ a:hover {
   margin: 0;
   padding: 1em 1em 0.5em 1.5em;
   list-style: none;
-  /*border-left: 1px solid #444;
-  border-right: 1px solid #444;
-  border-bottom: 1px solid #444;*/
 }
 
 .secondary-content h3 {
@@ -400,15 +396,14 @@ a:hover {
     float: right;
   }
 
-  .secondary-content {
-    padding: 0;
-  }
-
   .secondary-content div {
     float: left;
-    width: 30%;
-    margin-left: 1.6667%;
-    margin-right: 1.6667%;
+    width: 31.33333%;
+    margin-right: 3%;
+  }
+
+  .secondary-content div:last-child {
+    margin-right: 0;
   }
 
   .main-footer {
