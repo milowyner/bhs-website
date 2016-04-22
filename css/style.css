@@ -148,9 +148,12 @@ a:hover {
 
 .main-footer {
   color: #4d4d4d;
+  font-size: 0.9em;
+  background-color: #fff;
   text-align: center;
-  padding-top: 3em;
-  padding-bottom: 4em;
+  padding: 1em 0 2em;
+  margin-top: 1em;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .copyright {
@@ -371,6 +374,7 @@ a:hover {
     padding-right: 1em;
   }
 
+  .wrapper::after,
   .group::after,
   .secondary-content::after { /* Clearfix */
   content: " ";
