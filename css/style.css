@@ -49,23 +49,25 @@ body {
 }
 
 h1,
-h2 {
-  color: #f60;
-  font-weight: 400;
+h2,
+h3 {
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
   margin-top: 0;
   margin-bottom: 0.25rem;
+}
+
+h1,
+h2 {
+  color: #f60;
+  font-weight: 400;
 }
 
 h3 {
   color: #fff;
   font-size: 1em;
   font-weight: 600;
-  font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
   background-color: #f60;
   padding: 10px 10px;
-  margin-top: 0;
-  margin-bottom: 0.25rem;
 }
 
 p {
@@ -133,6 +135,7 @@ a:hover {
 .secondary-content {
   padding-left: 1em;
   padding-right: 1em;
+  font-size: 0.9em;
 }
 
 .group,
@@ -298,7 +301,7 @@ a:hover {
 /* ---- Secondary Content ---- */
 
 .secondary-content {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .secondary-content ul {
@@ -323,7 +326,7 @@ a:hover {
 }
 
 #resources a {
-  color: inherit;
+  color: #0d0d0d;
 }
 
 #resources a:hover {
