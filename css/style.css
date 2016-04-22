@@ -243,7 +243,6 @@ a:hover {
   font-family: "Montserrat", Tahoma, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  width: 100%;
   background-color: #0d0d0d;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
 }
@@ -419,6 +418,10 @@ a:hover {
 
   /* ---- Nav ---- */
 
+  .main-nav {
+    margin: 0 1em;
+  }
+
   .main-nav > ul {
     margin: auto;
     width: 90%;
@@ -459,10 +462,6 @@ a:hover {
 }
 
 @media (min-width: 1025px) {
-  
-  .main-nav {
-    max-width: 1248px;
-  }
 
   .main-nav a {
     font-size: 0.9em;
