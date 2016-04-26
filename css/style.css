@@ -154,21 +154,35 @@ a:hover {
   font-size: 0.9em;
   background-color: #fff;
   text-align: center;
-  padding: 1em 0 2em;
+  padding: 1rem 0 1rem;
   margin-top: 1em;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.main-footer address {
+  margin-bottom: 1.5rem;
+}
+
+.social-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.fb,
+.tw {
+  background-color: #333;
 }
 
 .copyright {
   font-weight: bold;
   display: block;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .bsd-logo {
   width: 177px;
-  margin: auto;
+  margin: 0 auto 1rem;
 }
 
 /* ---- Search Bar ---- */
@@ -402,6 +416,10 @@ a:hover {
     float: right;
   }
 
+  .group:last-child {
+    margin-bottom: 0;
+  }
+
   .secondary-content div {
     float: left;
     width: 31.33333%;
@@ -413,7 +431,17 @@ a:hover {
   }
 
   .main-footer {
+    padding: 2em;
     clear: both;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .copyright,
+  .main-footer address {
+    margin-bottom: 0;
   }
 
   /* ---- Nav ---- */
