@@ -161,28 +161,38 @@ a:hover {
 
 .main-footer address {
   margin-bottom: 1.5rem;
+  clear: both;
 }
 
 .social-icon {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
-.fb,
-.tw {
-  background-color: #333;
-}
+/*.tw {
+  background-color: #55acee;
+  border-radius: 3px;
+}*/
 
 .copyright {
   font-weight: bold;
   display: block;
-  margin-bottom: 1rem;
 }
 
 .bsd-logo {
   width: 177px;
-  margin: 0 auto 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-icon,
+.copyright,
+.bsd-logo {
+  margin-bottom: 1rem;
 }
 
 /* ---- Search Bar ---- */
