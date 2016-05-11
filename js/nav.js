@@ -36,6 +36,7 @@ $('.nav-link').on({
 		} else {
 			timeoutId = setTimeout(showNav, 0);
 		}
+		isTabOpen = true;
 	}, 
 	mouseleave: function() {
 		clearTimeout(timeoutId);
