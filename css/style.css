@@ -293,6 +293,10 @@ a:hover {
   color: #f60;
 }
 
+.nav-link {
+  cursor: default;
+}
+
 .selected {
   color: #f60;
 }
@@ -449,7 +453,7 @@ a:hover {
     display: -ms-flexbox;      /* TWEENER - IE 10 */
     display: -webkit-flex;     /* NEW - Chrome */
     display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    
+
     justify-content: center;
     flex-direction: row-reverse;
     align-items: center;
