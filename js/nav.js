@@ -3,23 +3,23 @@
 
 var timeoutId = 0;
 var thisNav;
-var isOk;
+var isDone;
+var isTabOpen = false;
 
 function showNav() {
-	isOk = false;
-	console.log(false);
-	thisNav.css('z-index', 100).slideDown(300, function() {isOk = true; console.log(true);});
+	isDone = false;
+	thisNav.css('z-index', 100).slideDown(300, function() {isDone = true;});
+	isTabOpen = true;
 }
 
 function hideNav() {
-	isOk = false;
-	console.log(false);
-	thisNav.css('z-index', 50).slideUp(200, function() {isOk = true; console.log(true);});
+	isDone = false;
+	thisNav.css('z-index', 50).slideUp(200, function() {isDone = true;});
 }
 
 function clickToggle() {
-	if(isOk == true) {
-		$(this).next().slideToggle(400);
+	if(isDone == true) {
+		$(this).next().slideToggle(300);
 		return false;
 	}
 }
@@ -31,7 +31,11 @@ $('body').removeClass('no-javascript');
 $('.nav-link').on({
 	mouseenter: function() {
 		thisNav = $(this).children('ul');
-	    timeoutId = setTimeout(showNav, 200);
+		if (isTabOpen == true) {
+			timeoutId = setTimeout(showNav, 200);
+		} else {
+			timeoutId = setTimeout(showNav, 0);
+		}
 	}, 
 	mouseleave: function() {
 		clearTimeout(timeoutId);
