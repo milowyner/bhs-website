@@ -33,7 +33,7 @@ $('.nav-link').on({
 });
 
 // Alternatively toggles nested nav on click (this is for mobile)
-$('.nav-link > a').on('touchstart', clickToggle);
+$('.nav-link > a').on('touch', clickToggle);
 
 
 // $('#myElement').mousedown(function() {
