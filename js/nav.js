@@ -3,18 +3,25 @@
 
 var timeoutId = 0;
 var thisNav;
+var isOk;
 
 function showNav() {
-	thisNav.css('z-index', 100).slideDown(300);
+	isOk = false;
+	console.log(false);
+	thisNav.css('z-index', 100).slideDown(300, function() {isOk = true; console.log(true);});
 }
 
 function hideNav() {
-	thisNav.css('z-index', 50).slideUp(200);
+	isOk = false;
+	console.log(false);
+	thisNav.css('z-index', 50).slideUp(200, function() {isOk = true; console.log(true);});
 }
 
 function clickToggle() {
-	$(this).next().slideToggle(400);
-	return false;
+	if(isOk == true) {
+		$(this).next().slideToggle(400);
+		return false;
+	}
 }
 
 // Disable default show on hover from css
@@ -33,8 +40,7 @@ $('.nav-link').on({
 });
 
 // Alternatively toggles nested nav on click (this is for mobile)
-$('.nav-link > a').on('touchstart', clickToggle);
-$('.nav-link > a').on('touchend', function() {return: false});
+$('.nav-link > a').on('click', clickToggle);
 
 //Prevent nav link from opening
 $('.nav-link > a').click (function (e) {
@@ -42,8 +48,6 @@ $('.nav-link > a').click (function (e) {
         return false;  
     } 
 );
-
-
 
 // $('#myElement').mousedown(function() {
 //     timeoutId = setTimeout(myFunction, 1000);
