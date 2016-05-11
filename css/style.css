@@ -444,9 +444,14 @@ a:hover {
     padding: 2em;
     clear: both;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row-reverse;
     align-items: center;
+  }
+
+  .main-footer div {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .copyright,
