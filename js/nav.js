@@ -32,7 +32,7 @@ $('.nav-link').on({
 	mouseenter: function() {
 		thisNav = $(this).children('ul');
 		if (isTabOpen == true) {
-			timeoutId = setTimeout(showNav, 200);
+			timeoutId = setTimeout(showNav, 150);
 		} else {
 			timeoutId = setTimeout(showNav, 0);
 		}
