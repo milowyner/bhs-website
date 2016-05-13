@@ -501,7 +501,7 @@ a:hover {
   }
 
   .nav-link ul a {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   .nav-link ul {
@@ -525,6 +525,10 @@ a:hover {
 
   .main-nav a {
     font-size: 0.9em;
+  }
+
+  .main-nav ul a {
+    font-size: 0.8em;
   }
 
   /* ---- Layout Styles ---- */
