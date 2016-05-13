@@ -47,13 +47,6 @@ $('.nav-link').on({
 // Alternatively toggles nested nav on click (this is for mobile)
 $('.nav-link > a').on('click', clickToggle);
 
-//Prevent nav link from opening
-$('.nav-link > a').click (function (e) {
-        e.preventDefault(); 
-        return false;  
-    } 
-);
-
 // $('#myElement').mousedown(function() {
 //     timeoutId = setTimeout(myFunction, 1000);
 // }).bind('mouseup mouseleave', function() {
