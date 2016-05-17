@@ -42,7 +42,7 @@
 }
 
 body {
-	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	font-family: "Lato", Tahoma, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	color: #212121;
   background-color: #d9d9d9;
@@ -71,7 +71,6 @@ h3 {
 }
 
 p {
-  font-family: "Lato", Tahoma, Helvetica, Arial, sans-serif;
   margin-top: 0;
   margin-bottom: 1.25em;
 }
@@ -350,6 +349,27 @@ a:hover {
   width: 100%;
   float: right;
   margin-bottom: 1em;
+}
+
+.button {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  background-color: #f60;
+  color: #fff;
+  margin: auto;
+  margin-bottom: 1em;
+  max-width: 20em;
+}
+
+.button:hover {
+  background-color: #ffa366;
+  color: #fff;
+}
+
+.no-list-style {
+  list-style: none;
+  padding-left: 0;
 }
 
 
