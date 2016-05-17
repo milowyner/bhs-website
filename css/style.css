@@ -71,6 +71,7 @@ h3 {
 }
 
 p {
+  font-family: "Lato", Tahoma, Helvetica, Arial, sans-serif;
   margin-top: 0;
   margin-bottom: 1.25em;
 }
@@ -132,12 +133,7 @@ a:hover {
   box-shadow: -6px 0 5px -5px #0d0d0d;
 }
 
-.secondary-content {
-  padding-left: 1em;
-  padding-right: 1em;
-  font-size: 0.9em;
-}
-
+.box,
 .group,
 .secondary-content div {
   margin: 2rem 0;
@@ -147,6 +143,12 @@ a:hover {
 
 .group .text {
   padding: 1em 1em 0;
+}
+
+.secondary-content {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 0.9em;
 }
 
 .main-footer {
@@ -328,6 +330,29 @@ a:hover {
   font-weight: 600;
 }
 
+
+/* ---- Main Content ---- */
+
+.box {
+  padding: 1em 1em;
+}
+
+.box p {
+  line-height: 1.65em;
+}
+
+.box h1 {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.box img {
+  width: 100%;
+  float: right;
+  margin-bottom: 1em;
+}
+
+
 /* ---- Secondary Content ---- */
 
 .secondary-content {
@@ -407,6 +432,18 @@ a:hover {
     padding-right: 1em;
   }
 
+  .box {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  .box img {
+    float: right;
+    width: 40%;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+  }
+
   .wrapper::after,
   .group::after,
   .secondary-content::after { /* Clearfix */
@@ -417,6 +454,10 @@ a:hover {
 
   .group .text {
     width: 45%;
+  }
+
+  .group p {
+    margin-bottom: 0;
   }
 
   .group img {
