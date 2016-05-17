@@ -439,9 +439,15 @@ a:hover {
 
   .box img {
     float: right;
-    width: 40%;
+    width: 45%;
     margin-left: 1em;
     margin-bottom: 0.5em;
+  }
+
+  .box .article {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .wrapper::after,
