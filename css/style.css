@@ -359,6 +359,7 @@ a:hover {
   max-width: 480px;
   margin: 0 auto 1rem;
   display: block;
+  background-color: #000;
 }
 
 .lyrics {
@@ -497,8 +498,6 @@ a:hover {
     float: left;
     width: 60%;
     margin-top: 0.5em;
-    background-color: #000;
-    border: 1px solid #000;
   }
 
   .lyrics {
