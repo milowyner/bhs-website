@@ -497,6 +497,7 @@ a:hover {
     float: left;
     width: 60%;
     margin-top: 0.5em;
+    background-color: #000;
   }
 
   .lyrics {
