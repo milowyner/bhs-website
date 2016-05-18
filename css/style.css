@@ -354,6 +354,27 @@ a:hover {
   margin-bottom: 1em;
 }
 
+.box video {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.lyrics {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.lyrics h2 {
+  margin-bottom: 1em;
+  color: inherit;
+}
+
+.lyrics p {
+  margin-bottom: 0.75em;
+}
+
 .button {
   display: block;
   padding: 0.5em;
@@ -472,6 +493,17 @@ a:hover {
     margin-bottom: 0.5em;
   }
 
+  .box video {
+    float: left;
+    width: 60%;
+    margin-top: 0.5em;
+  }
+
+  .lyrics {
+    float: right;
+    width: 40%;
+  }
+
   .box .article {
     max-width: 700px;
     margin-left: auto;
@@ -480,6 +512,7 @@ a:hover {
 
   .wrapper::after,
   .group::after,
+  .box::after,
   .secondary-content::after { /* Clearfix */
   content: " ";
   display: table;
